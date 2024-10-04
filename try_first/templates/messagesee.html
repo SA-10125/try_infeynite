@@ -1,0 +1,93 @@
+
+{% extends 'mainhack.html' %}
+
+{% block main_content %}
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>{{msg.Subject}}</title><!--change title accordingly-->
+    
+    
+    <style>
+        .button-container {
+            text-align: center; 
+        }
+        .button {
+            display: inline-block;
+            justify-content: flex-end; 
+            align-items: center; 
+            margin-right: 1rem;
+            max-width: 20%;
+            font-size: 125%;
+            padding: 10px 20px;
+        }
+        .main {
+            font-size: 150%;
+            color: #000;
+            font-weight: 500;
+        }
+
+        .space {
+            margin-top: 20%;
+        }
+        
+        .space2 {
+            padding: 5%;
+        }
+        
+        a:visited {
+            color: white;
+            background-color: transparent;
+            text-decoration: none;
+         }
+
+         a{
+            color:white;
+         }
+
+         .thanks{
+            position:relative;
+            text-align:right;
+            right:125%;
+            margin-top:20%;
+            font-size:100%; 
+         }
+         .small{
+            font-size: 100%;
+         }
+         .back-button{
+            position:relative ;
+            text-align: left;
+            font-size: 2.5em;
+            margin-right:-20%;
+            margin-left: 50%;
+        }
+        .back-button a{
+            text-decoration: none;
+            color:#454545;  
+        }
+
+        .back-button a:visited{
+            color:#454545;
+        }
+        
+    </style>
+    <div class="back-button">
+        <a href="{% url 'events' %}">←</a><!--change url here-->
+      </div>
+    <div class="space"></div>
+    <div class="main">
+        {{msg.Subject}}
+    </div>
+    <div class="space"></div>
+    <div>
+        {{msg.Message}}
+    <hr>
+    <div class="space2"></div>
+    <div>
+        - {{msg.Sender}}
+    </div>
+    <br>
+    <div class="space2"></div>
+
+    <br>
+
+{% endblock %}
