@@ -7,4 +7,8 @@ Proud to have worked with an incredible team: Vinaayak G Dasika and Madhav Vinod
 
 ## My role:
 Built the backend for the website to send secure messages. This included:
-    1. Creating models in django such as Users, 
+    1. Creating models in django such as 
+(i) Users that can sign up using username, password and email ID. 
+(ii) ID cards connected to each user that hold unique User ID
+(iii) Pouches of two that holds 2 User ID'S and certain keys. (created only once first message is to be sent bw two users.)
+(iv) 
