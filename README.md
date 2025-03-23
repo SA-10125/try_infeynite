@@ -1,4 +1,4 @@
-# try_infeynite
+8# try_infeynite
  
 ## Overview:
 
@@ -11,4 +11,14 @@ Built the backend for the website to send secure messages. This included:
 (i) Users that can sign up using username, password and email ID. 
 (ii) ID cards connected to each user that hold unique User ID
 (iii) Pouches of two that holds 2 User ID'S and certain keys. (created only once first message is to be sent bw two users.)
-(iv) 
+(iv) Messages containing sender, reciever, subject and message.
+
+    2. Making pages and methods to send the messages. (backend)
+
+    3. Integrating the encryption method.
+
+    4. Rendering frontend.
+
+## To run:
+
+Aftee downloading dependencies, to run, download folder and go to directory containing manage.py in cmd, then 'manage.py runserver' .
